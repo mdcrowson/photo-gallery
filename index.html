@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="js/baguetteBox.min.js" async></script>
 </head>
 <body>
     <div class="wrapper">
@@ -22,22 +24,62 @@
 
         <main>
             <div class="gallery">
-                    <img class="thumbnail" src="photos/thumbnails/01.jpg" alt="hills">
-                    <img class="thumbnail" src="photos/thumbnails/02.jpg" alt="hills">
-                    <img class="thumbnail" src="photos/thumbnails/03.jpg" alt="hills">
-                    <img class="thumbnail" src="photos/thumbnails/04.jpg" alt="hills">
-                    <img class="thumbnail" src="photos/thumbnails/05.jpg" alt="hills">
-                    <img class="thumbnail" src="photos/thumbnails/06.jpg" alt="hills">
-                    <img class="thumbnail" src="photos/thumbnails/07.jpg" alt="hills">
-                    <img class="thumbnail" src="photos/thumbnails/08.jpg" alt="hills">
-                    <img class="thumbnail" src="photos/thumbnails/09.jpg" alt="hills">
-                    <img class="thumbnail" src="photos/thumbnails/10.jpg" alt="hills">
-                    <img class="thumbnail" src="photos/thumbnails/11.jpg" alt="hills">
-                    <img class="thumbnail" src="photos/thumbnails/12.jpg" alt="hills">
+                <a href="photos/01.jpg" title="Hay Bales" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+                    <img class="thumbnail" src="photos/thumbnails/01.jpg" alt="field of hay bales">
+                </a>
+
+                <a href="photos/02.jpg" title="Lake" data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+                    <img class="thumbnail" src="photos/thumbnails/02.jpg" alt="lake">
+                </a>
+
+                <a href="photos/03.jpg" title="Canyon" data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+                    <img class="thumbnail" src="photos/thumbnails/03.jpg" alt="canyon">
+                </a>
+
+                <a href="photos/04.jpg" title="Iceberg" data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+                    <img class="thumbnail" src="photos/thumbnails/04.jpg" alt="iceberg">
+                </a>
+
+                <a href="photos/05.jpg" title="Desert" data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+                    <img class="thumbnail" src="photos/thumbnails/05.jpg" alt="Desert">
+                </a>
+
+                <a href="photos/06.jpg" title="Fall" data-caption="Fall is coming, I love when the leaves on the trees start to change color.">
+                    <img class="thumbnail" src="photos/thumbnails/06.jpg" alt="Fall">
+                </a>
+
+                <a href="photos/07.jpg" title="Plantation" data-caption="I drove past this plantation yesterday, everything is so green!">
+                    <img class="thumbnail" src="photos/thumbnails/07.jpg" alt="Plantation">
+                </a>
+
+                <a href="photos/08.jpg" title="Dunes" data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+                    <img class="thumbnail" src="photos/thumbnails/08.jpg" alt="Dunes">
+                </a>
+
+                <a href="photos/09.jpg" title="Countryside Lane" data-caption="We enjoyed a quiet stroll down this countryside lane.">
+                    <img class="thumbnail" src="photos/thumbnails/09.jpg" alt="Countryside Lane">
+                </a>
+
+                <a href="photos/10.jpg" title="Sunset" data-caption="Sunset at the coast! The sky turned a lovely shade of orange.">
+                    <img class="thumbnail" src="photos/thumbnails/10.jpg" alt="Sunset">
+                </a>
+
+                <a href="photos/11.jpg" title="Cave" data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+                    <img class="thumbnail" src="photos/thumbnails/11.jpg" alt="Cave">
+                </a>
+
+                <a href="photos/12.jpg" title="Bluebells" data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+                    <img class="thumbnail" src="photos/thumbnails/12.jpg" alt="Bluebells">
+                </a>
 
             </div>
         </main>
 
     </div>
+    <script>
+        window.addEventListener('load', function() {
+          baguetteBox.run('.gallery');
+        });
+        </script>
 </body>
 </html>
