@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    color: #9b9b9b;
     box-sizing: border-box;
 }
 
@@ -9,6 +10,7 @@
     width: 90%;
     max-width: 980px;
     margin: 0 auto;
+    text-align: center;
 }
 
 
@@ -17,11 +19,13 @@
 input {
     padding: 15px;
     margin: 30px;
-    width: 65%;
+    width: 55%;
+    border: 2px solid #dedede;
+    border-radius: 6px;
 }
 
 input::placeholder {
-    font-size: .85em;
+    font-size: .8em;
 }
 
 
@@ -29,6 +33,7 @@ input::placeholder {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
     gap: 30px;
+    justify-content: center;
 }
