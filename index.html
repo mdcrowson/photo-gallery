@@ -12,19 +12,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script src="js/baguetteBox.min.js" async></script>
+    <script src="js/searchFilterMDC.js"></script>
 </head>
 <body>
     <div class="wrapper">
         
         <header>
             <div>
-                <input type="text" placeholder="Search">
+                <input id="search" type="text" placeholder="Search" onkeyup="searchFilter()">
             </div>
         </header>
 
         <main>
             <div class="gallery">
-                <a href="photos/01.jpg" title="Hay Bales" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+                <a href="photos/01.jpg" id="photo1" title="Hay Bales" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
                     <img class="thumbnail" src="photos/thumbnails/01.jpg" alt="field of hay bales">
                 </a>
 
